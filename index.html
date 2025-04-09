@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="box-date">
+                <h2 class="cur-date">current date</h2>
+            </div>
+            <div class="add">
+                <h2>Додати справу</h2>
+                <div class="box-input">
+                    <input type="text" class="add-name" placeholder="Введіть назву справи">
+                    <input type="text" class="add-disc" placeholder="Введіть опис справи">
+                    <div class="add-variable">
+                        <div class="add-priority">
+                            <p>Пріоритет справи: </p>
+                            <div>
+                                <input type="radio" class="important" name="add">
+                                <label for="important">важлива<img src="img/important.png" alt=""></label>
+                            </div>
+                            <div>
+                                <input type="radio" class="normal" name="add" checked>
+                                <label for="normal">звичайна<img src="img/usually.png" alt=""></label>
+                            </div>
+                        </div>
+                        <div class="add-date">
+                            <p>Дата виконання: </p>
+                            <div>
+                                <input type="date" id="add-date">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn-add">Додати</button>
+            </div>
+        </header>
+        
+        <div class="main">
+            <div class="box-leftside">
+                <div class="todo-items">
+                    <div class="box-find">
+                        <h4>Пошук справ за: </h4>
+                        <div>
+                            <input type="radio" id="name" name="find" value="name">
+                            <label for="name">назвою</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="priority" name="find" value="priority">
+                            <label for="priority">пріоритетом</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="desc" name="find" value="desc">
+                            <label for="desc">описом</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="date" name="find" value="date">
+                            <label for="date">датою виконання</label>
+                        </div>
+                        <div>
+                            <input type="text" class="find-input" placeholder="Введіть критерій пошуку">
+                        </div>                       
+                        <div>
+                            <button class="search-btn">Пошук</button>
+                        </div>
+                    </div>
+    
+                    <div class="box-display">
+                        <h4>Відображення списку справ: </h4>
+                        <div>
+                            <input type="radio" id="day" name="display" value="day">
+                            <label for="day">на день</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="week" name="display" value="week">
+                            <label for="week">на тиждень</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="month" name="display" value="month">
+                            <label for="month">на місяць</label>                    
+                        </div>
+                        <div>
+                            <button class="display-btn">Відобразити</button>
+                        </div>
+                    </div>
+    
+                    <div class="box-sort">
+                        <h4>Сортування за: </h4>
+                        <div>
+                            <input type="radio" id="sort-priority" name="sort" value="sort-priority">
+                            <label for="sort-priority">пріоритетом</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="sort-date" name="sort" value="sort-date">
+                            <label for="sort-date">датою виконання</label>
+                        </div>
+                        <div>
+                            <button class="sort-btn">Сортувати</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="box-rightside">  
+                <h1>Список справ</h1>
+                <div class="list">               
+                    <!-- generate in js -->
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <script src="script.js"></script>
+</body>
+</html>

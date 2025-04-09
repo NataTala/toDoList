@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 1200px;
+    height: 960px;
+    margin: auto;
+    padding: 20px;
+    position: relative;
+    background-image: url(./img/bg.jpg);
+    padding: 30px 50px;
+}
+h1, h2, h4{
+    color: rgb(54, 23, 82);
+}
+h1, h2{
+    text-align: center;
+    font-size: 25px;
+    padding: 10px 0;
+}
+img{
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+}
+button{
+    border: none;
+    color: white;
+}
+p{
+    padding: 3px 0;
+}
+.header{
+    width: 100%;
+    display: flex;
+}
+.box-date{
+    width: 48%;
+}
+.box-date h2{
+    margin-top: 28%;
+}
+h2.cur-date{
+    font-size: 35px;
+}
+.main{
+    width: 90%;
+    position: absolute;
+    top: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* ADD ITEMS */
+
+.add{
+    width: 45%;
+    background-color: rgba(240, 240, 240, 0.8);
+    text-align: center;
+}
+.box-input > input{
+    width: 90%;
+    margin: 2px 0;
+    outline: none;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+.add-variable{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+}
+.btn-add{
+    background-color: rgb(54, 23, 82);
+    padding: 7px 30px;
+    border-radius: 5px;
+    display: block;
+    margin: 2px auto 8px auto;
+}
+
+/* LEFT SIDE BOX */
+.box-leftside{
+    width: 35%;
+    padding: 5px;
+}
+.todo-items > div{
+    padding-top: 30px;
+    font-size: 18px;
+}
+.todo-items > div > div{
+    padding-top: 8px;
+}
+.find-input{
+    width: 60%;
+    outline: none;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+.box-leftside button{
+    background-color: transparent;
+    color: rgb(54, 23, 82);
+    border: 2px solid rgb(54, 23, 82);
+    font-weight: bold;
+    font-size: 15px;
+    padding: 6px 0;
+    width: 110px;
+    border-radius: 5px;
+    display: block;
+}
+
+/* RIGHT SIDE BOX */
+.box-rightside{
+    width: 45%;
+}
+img{
+    pointer-events: none;
+}
+.list-item-part{
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.list-item{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5px;
+    padding-left: 5px;
+    margin-top: 5px;
+}
+.item-name{
+    width: 50%;
+    font-weight: bold;
+    padding: 3px;
+    background-color: #fff;
+    word-wrap: break-word;
+}
+.list-desc{
+    width: 90%;
+    background-color: #fff;
+    padding: 5px;
+    font-size: 15px;
+    word-wrap: break-word;
+}
+
+.none{
+    display: none;
+}
